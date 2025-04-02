@@ -1,8 +1,9 @@
-import React from "react";
-
+import React, { Fragment } from "react";
+import Metadata from "./layout/MetaData";
 const Home = () => {
   return (
-    <div class="container container-fluid">
+    <Fragment>
+      <Metadata titulo={"Prueba metadata"} />
       <section id="products" className="container mt-5">
         <div className="row">
           <div className="col-sm-12 col-md-6 col-lg-3 my-3">
@@ -30,7 +31,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-    </div>
+    </Fragment>
   );
 };
 
